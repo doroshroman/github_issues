@@ -64,7 +64,7 @@ try:
     print(f"RESET TIME: {reset_time}")
     time.sleep(3)
 
-    API_LIMIT = quota // 1000 if quota else exit()
+    API_LIMIT = quota // 100 if quota > 100 else exit()
 
     with open(VISITED_GITHUB_REPOS_FILENAME, 'r') as file:
         VISITED_REPOS = file.read().splitlines()
