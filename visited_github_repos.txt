@@ -658,7 +658,6 @@ ConsenSys/eth-signer
 uber/npm-shrinkwrap
 kodmax/grunt-dom-templates
 hellysmile/fake-useragent
-grodowski/imagen_rb
 joaquimserafim/express-validate-schema
 perrygeo/pyimpute
 microinginer/yii2-cbrf-rates
@@ -1019,7 +1018,6 @@ logicminds/rubyipmi
 holycheater/yii-curl
 vetermanve/verse_storage
 keighl/bearclaws
-haroldiedema/joii
 conbus/fbmq
 adhocore/php-cli
 mintware-de/data-model-mapper
@@ -1033,11 +1031,11 @@ this7/framework
 h4d/i18n
 mariocasciaro/npm-workspace
 gaptree/gap-php-db
-Syncleus/aparapi
-toejough/pimento
 reinbach/passport-stash
 MiguelCastillo/p-stream
-unclead/yii2-multiple-input
-the-simian/gulp-concat-filenames
-imonology/scalra
-npetruzzelli/es-abstract-to-length
+
+CableFramework/ServiceContainer
+bdmac/strong_password
+micschk/silverstripe-chunkeduploadfield
+Fuyukai/asyncwebsockets
+kemitchell/multiwritable.js
