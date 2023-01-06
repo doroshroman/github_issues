@@ -2,3 +2,5 @@
 env/
 compress_json.py
 github_issues.json
+deduplicate.py
+utils/

@@ -13,10 +13,10 @@ from datetime import datetime
 
 load_dotenv()
 
-
-GITHUB_REPOS_FILENAME = 'github_repos_names.txt'
-GITHUB_ISSUES_FILENAME = 'github_issues.json'
-VISITED_GITHUB_REPOS_FILENAME = 'visited_github_repos.txt'
+DATA_PATH = './data'
+GITHUB_REPOS_FILENAME = f'{DATA_PATH}/github_repos_names.txt'
+GITHUB_ISSUES_FILENAME = f'{DATA_PATH}/github_issues.json'
+VISITED_GITHUB_REPOS_FILENAME = f'{DATA_PATH}/visited_github_repos.txt'
 
 API_LIMIT = 100
 GITHUB_API_TOKEN = os.environ["GITHUB_API_TOKEN"]
@@ -62,7 +62,7 @@ try:
 
     print(f"REMAINING QUOTA: {quota}")
     print(f"RESET TIME: {reset_time}")
-    time.sleep(3)
+    time.sleep(1)
 
     API_LIMIT = quota // 100 if quota > 100 else exit()
 
@@ -155,8 +155,7 @@ async def main(visited_repos, repos):
                     )
 
             comments_responses = await asyncio.gather(*comments_tasks, return_exceptions=True)
-            comments_responses = [
-                resp for resp in comments_responses if not isinstance(resp, Exception)]
+            comments_responses = [resp for resp in comments_responses if not isinstance(resp, Exception)]
             for url, response, data in comments_responses:
                 if response:
                     data.update({
