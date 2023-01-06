@@ -153,7 +153,6 @@ async def main(visited_repos, repos):
                             "issue_title": issue_title
                         }))
                     )
-                    visited_repos_batch.add(repo_url)
 
             comments_responses = await asyncio.gather(*comments_tasks, return_exceptions=True)
             comments_responses = [
@@ -164,6 +163,7 @@ async def main(visited_repos, repos):
                         "comments": response
                     })
                     respones_cleared.append(data)
+                visited_repos_batch.add(repo_url)
 
         append_to_json(GITHUB_ISSUES_FILENAME, respones_cleared)
         append_to_file(VISITED_GITHUB_REPOS_FILENAME, visited_repos_batch)
