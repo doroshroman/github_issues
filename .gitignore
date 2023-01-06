@@ -1,3 +1,4 @@
 .env
 env/
 compress_json.py
+github_issues.json
