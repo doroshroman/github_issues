@@ -15,7 +15,7 @@ load_dotenv()
 
 DATA_PATH = './data'
 GITHUB_REPOS_FILENAME = f'{DATA_PATH}/github_repos_names.txt'
-GITHUB_ISSUES_FILENAME = f'{DATA_PATH}/github_issues.json'
+GITHUB_ISSUES_FILENAME = f'{DATA_PATH}/github_issues_2.json'
 VISITED_GITHUB_REPOS_FILENAME = f'{DATA_PATH}/visited_github_repos.txt'
 
 API_LIMIT = 100
