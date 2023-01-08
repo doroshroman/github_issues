@@ -14,6 +14,11 @@ techdivision/import-product
 facebook/fresco
 Yoqut/Sms
 ikkez/f3-pagination
+Scille/autobahn-sync
+Tretti/rails-bootstrap-helpers
+sporsh/carnifex
+acoustid/mbdata
+arachnidlabs/mcp2210
 rvm/rvm-gem
 aconrad/pycobertura
 Mogztter/opal-node-runtime
@@ -143,6 +148,8 @@ django-blog-zinnia/wordpress2zinnia
 watoki/collections
 moreati/subresource-integrity
 ninapavlich/django-share-me-share-me
+senecajs/seneca-auth
+singpath/example-app
 benbalter/jekyll-default-layout
 kitplummer/pdftohtmlr
 oplatek/csv2json
@@ -862,6 +869,7 @@ toland/patron
 mizmoz/container
 axt/angr-utils
 CrestApps/laravel-code-generator
+sroze/messenger-enqueue-transport
 containership/containership.api
 yuncms/yii2-tag
 thujohn/analytics-l4
@@ -1424,6 +1432,7 @@ resultsystems/relationships
 aerogear/aerogear-android-security
 larsks/thecache
 abhi1693/yii2-installer
+developmentseed/vt-geojson
 wizgrav/aframe-effects
 tobato/FastDFS_Client
 OrangeTux/einder
@@ -1641,6 +1650,8 @@ sbang/jsr330activator
 AOEpeople/Aoe_Api2
 asottile/future-fstrings
 cslarsen/crianza
+chigby/mtg
+galaxyproject/gravity
 Industryswarm/isnode-loader
 jcrowe206/BadWordFilter
 walidsa3d/baklava
@@ -1870,6 +1881,7 @@ aerth/seconf
 codecentric/zucchini
 Jma353/py-podcast
 bearded-web/bearded
+mattn/go-runewidth
 yibn2008/find-process
 jlhawn/go-crypto
 QuanticTelecom/support
@@ -4658,7 +4670,6 @@ Horyzone/sim-src
 cashlo/asciichart
 kakserpom/phpdaemon
 brettlangdon/forge
-laramanager/laramanager
 henrytao-me/ekit-util
 usc-isi-i2/dig-extractor
 FINRAOS/MSL
@@ -4799,6 +4810,7 @@ kylekatarnls/vicopo
 google/python-adb
 michielkempen/laravel-http-responses
 federico123579/Trading212-API
+SQiShER/java-object-diff
 jenkinsci/groovy-plugin
 maxmirazh33/yii2-uploadable-file
 phplegends/http
@@ -7057,7 +7069,6 @@ ElfSundae/laravel-hashid
 awjudd/l4-feed-reader
 Firehed/u2f-php
 raphaelstolt/php-jsonpointer
-aiortc/aioice
 mkoryak/floatThead
 mpowaga/react-slider
 backand/backand-hosting-s3
@@ -7729,6 +7740,7 @@ xinc-develop/xinc-getopt
 kgryte/node-app-etc-load
 kubernetes/kubernetes
 php-packages/fluent
+moby/moby
 PiedWeb/CMS
 geocoder-php/cache-provider
 calgamo/console
@@ -8079,6 +8091,7 @@ philosophie/stairs
 ioos/wicken
 nats-io/java-nats-streaming
 kubernetes/kops
+micro/go-micro
 lav45/yii2-translated-behavior
 iPaya/yii2-script-block
 ntentan/ajumamoro
@@ -8518,6 +8531,7 @@ bdurand/acts_as_revisionable
 fullhouse-productions/FhpPhalconAuth
 pashky/connect-fastcgi
 juju/juju
+dgryski/go-jump
 zserge/anvil
 whxaxes/mus
 fedora-infra/fedmsg-atomic-composer
@@ -8751,6 +8765,7 @@ drewjbartlett/wordpress-eloquent
 DIPSAS/SwarmManagement
 piotrkowalczuk/ntypes
 RubyDevInc/paho.mqtt.ruby
+kristijanhusak/laravel-form-builder
 lob/lob-php
 ARCANEDEV/Composer
 pre-commit/pre-commit-mirror-maker
@@ -9132,6 +9147,10 @@ hanamura/wp-model
 MacHu-GWU/windtalker-project
 CanopyFA/quovo-ruby
 golang/groupcache
+gomodule/redigo
+writeas/go-strip-markdown
+codahale/blake2
+petar/GoMNIST
 IonicaBizau/asciify-pixel-matrix
 lucasvdh/laravelwhatsapp
 base-apps/base-apps-router
@@ -9272,7 +9291,9 @@ fullstackers/bus.io-common
 typicaljoe/taffydb
 popeindustries/inline-source
 BlackWaspTech/wasp-graphql
+unicodeveloper/mvrd
 cblanquera/cradle-captcha
+tsufeki/react-filesystem-monitor
 jcconnell/python-magicseaweed
 eloquent/enumeration
 Valuehorizon/valuehorizon-companies
@@ -9961,6 +9982,7 @@ sofa/sofa-image-resizer-service
 Ocramius/OcraDiCompiler
 overtrue/laravel-follow
 rchouinard/bencode
+pdffiller/pdffiller-php-api-client
 browner12/helpers
 seancallaway/laughs
 tweepy/tweepy
@@ -11053,6 +11075,7 @@ brochington/Akkad
 ffmike/shoehorn
 antaresproject/notifications
 chrvadala/react-svg-pan-zoom
+eggjs/egg-security
 chasex/redis-go-cluster
 dannyvink/omnipay-komoju
 qor/qor
@@ -11317,6 +11340,7 @@ idlesign/django-admirarchy
 sinsoku/ponytail
 forestgiant/portutil
 TakahikoKawasaki/nv-websocket-client
+Netflix/Nicobar
 aliyun/fc-java-sdk
 maxharp3r/archive-rotator
 kjk/u
@@ -11423,6 +11447,9 @@ JuicyPasta/reddit-snooper
 microservice-framework/microservice-client
 jrgp/linfo
 gogs/git-module
+segmentio/stats
+h2non/filetype
+google/logger
 kiwi0fruit/sugartex
 byjg/imageutil
 callmez/yii2-wechat
@@ -12152,6 +12179,8 @@ dereuromark/CakePHP-DatabaseLog
 wp-cli/cron-command
 wildhaber/gluebert
 kurbatov/firmata4j
+pebble/pebble-android-sdk
+jhalterman/lyra
 elcuervo/airplay
 simonh1000/angular-http-server
 medcat/command-runner
@@ -12533,7 +12562,6 @@ kgryte/eslint-plugin-no-unsafe-regex
 dominictarr/level-sublevel
 myfreeweb/broccoli-brotli
 thunks/thunk-ratelimiter
-juanparati/Emoji
 larislackers/php-binance
 asciidisco/grunt-patternprimer
 go-macaron/session
@@ -13410,6 +13438,7 @@ gka/d3-jetpack
 universalcore/unicore.hub.client
 crazybear/host-admin
 emmetio/markup-formatters
+acodercc/jsbison
 opensourcerefinery/vicus
 adventistmedia/worldly
 phergie/phergie-irc-plugin-react-feedticker
@@ -15107,6 +15136,7 @@ krystal-framework/krystal.framework
 vufind-org/vufinddate
 emencia/emencia-django-countries
 aerogear-attic/aerogear-otp-java
+JetBrains/xodus
 ngokevin/aframe-physics-components
 bzarras/newsapi
 jolestar/go-commons-pool
@@ -15287,6 +15317,9 @@ vorpaljs/bash-parser
 prooph/link-message-queue
 dmstr/yii2-ajax-button
 josemarluedke/ember-cli-segment
+AirSage/Petrel
+heroku/salesforce-oauth-request
+timothycrosley/concentration
 philnash/envyable
 bufferapp/kiner
 PlasticLizard/wonkavision
@@ -17085,6 +17118,8 @@ fdb/aufmachen
 openstack/stacktach-shoebox
 Magillem/generator-jhipster-pages
 jimbojw/node-red-contrib-json
+rootsdev/gedcomx-js
+meerkats/winston-slacker
 skerit/alchemy-styleboost
 wdecoster/nanoget
 umakantp/jsmart
@@ -18066,6 +18101,9 @@ pimax/fb-messenger-php
 waleedka/hiddenlayer
 melihovv/laravel-log-viewer
 hashicorp/go-plugin
+boltdb/bolt
+go-telegram-bot-api/telegram-bot-api
+fogleman/gg
 Ubudu/uBeacon-uart-lib
 cronvel/json-kit
 pluswerk/grumphp-bom-task
@@ -18135,6 +18173,8 @@ nateshmbhat/pyttsx3
 meteor/chromatic
 emmetio/atom-plugin
 J3RN/guard-foreman
+hozn/coilmq
+hahn-th/homematicip-rest-api
 HonzaKral/django-threadedcomments
 pat/riddle
 grycap/RADL
@@ -21516,6 +21556,8 @@ megahertz/node-comments-parser
 redfish4ktc/maven-soapui-extension-plugin
 hannesg/multi_git
 jpommerening/node-lazystream
+mbj/morpher
+nixme/pry-nav
 JamesRezo/webhelper-parser
 pusher/cide
 dljoseph/silverstripe-fontawesome-iconpickerfield
@@ -22889,6 +22931,8 @@ danielgp/composer-packages-listing
 linchpinstudios/yii2-foundation
 linkeddatacenter/BOTK-core
 slimphp/Slim-Middleware
+verot/class.upload.php
+slimphp/Slim
 mbeasley/ctrl
 cocur/vale
 knightzac19/NodeJS-ArkData
@@ -23608,6 +23652,7 @@ xiewulong/yii2-fileupload
 ben-ole/nice
 mukulhase/WebWhatsapp-Wrapper
 douban/libmc
+fullcontact/hadoop-sstable
 os72/protoc-jar
 mphasize/sails-generate-ember-blueprints
 bigcommerce/bigcommerce-api-python
@@ -24519,6 +24564,8 @@ msecret/perf-hunter
 aeisenberg/angular-bind-notifier
 mindjiver/gopherstack
 mobtexting/php-http-client
+ConsenSys/mythril-classic
+aiortc/aioice
 trevorstephens/gplearn
 RedHatInsights/insights-core
 rockettheme/toolbox
@@ -24974,6 +25021,7 @@ mholt/archiver
 satori-php/middleware
 cloudflare/cloudflare-go
 stephanenicolas/toothpick
+youseries/uflo
 benbria/exception-formatter
 laravel-notification-channels/messagebird
 zbanks/shmooze
@@ -25115,6 +25163,7 @@ lembarek/auth
 LaxarJS/laxar-developer-tools-widget
 silverbucket/webfinger.js
 dherault/serverless-offline
+aws/aws-xray-sdk-node
 yidas/yii2-fontawesome
 artkonekt/concord
 nightwolfz/mobx-connect
@@ -25278,6 +25327,7 @@ gillesruppert/nodecopter-leap
 kimmobrunfeldt/nap
 metapensiero/metapensiero.signal
 mnichols/ankh
+Ardesco/selenium-standalone-server-plugin
 thecodingmachine/html.utils.weblibrarymanager.component-installer
 gopherjs/gopherjs
 mozilla/node-client-sessions
@@ -26330,6 +26380,7 @@ delfick/nose-of-yeti
 VVatashi/BBCode
 puhitaku/naam
 umpirsky/Symfony-Upgrade-Fixer
+preprocess/pre-plugin
 pharmonic/event
 boilerroomtv/datastore.cloudfiles
 geniv/nette-translator
@@ -27661,6 +27712,7 @@ ThrusterIO/socket
 inception-soa/inception.primitives
 CatTail/go-exclude
 neos/flow-development-collection
+opauth/opauth
 tonis-io-legacy/tonis
 xdenser/node-firebird-libfbclient
 hbldh/sudokuextract
@@ -28554,6 +28606,7 @@ oat-sa/extension-tao-clientdiag
 timothyf/gameday_api
 Opifer/ContentBundle
 building5/sails-db-migrate
+fmfn/BayesianOptimization
 anthonator/dirigible
 peridot-php/leo
 napalm-automation/napalm
@@ -30805,6 +30858,8 @@ whazzmaster/fitgem
 romainbessugesmeusy/php-sql-query
 mobolic/facebook-sdk
 prolic/HumusAmqpDemoModule
+Azure/azure-cosmos-python
+pyparsing/pyparsing
 wimverstuyf/php-coda-parser
 Ingewikkeld/rest-resource-bundle
 ActionAgile/trellostats
@@ -31430,8 +31485,6 @@ pocketjoso/penthouse
 CivicSpleen/ambry
 ashleydavis/routey
 konfirm/node-polymorphic
-willishq/laravel5-flash
-GrahamDeprecated/Bugsnag
 frictionlessdata/tableschema-pandas-py
 lunisolar/magma
 sebriois/biomart
@@ -35430,6 +35483,7 @@ travisghansen/kubernetes-client-php
 valyala/tcplisten
 joaovicente/Tracy
 cqyijifu/watcher
+Netflix/zuul
 ZECTBynmo/AudioStreamer
 jkawamoto/dsargparse
 enr/clui
@@ -35440,6 +35494,8 @@ nodes-php/counter-cache
 ua1-labs/firebug
 posativ/isso
 nanbando/core
+FbF/Laravel-Youtube
+victorlei/smop
 donatj/mddoc
 uservoice/uservoice-java
 oleics/node-xcouch
@@ -37128,6 +37184,7 @@ robertdimarco/passport-google-token
 vroomfonde1/basicmodem
 hnhdigital-os/bluora-shared-api-traits
 davidyack/Xrm.Tools.CRMWebAPI
+Izhaki/nodemon-webpack-plugin
 martin-majlis/Wikipedia-API
 jekyll/jekyll-feed
 Eden-PHP/Folder
@@ -37521,7 +37578,6 @@ tux-rampage/rampage-module-installer
 swilson/aqualogic
 fugroup/easymongo
 twitter/typeahead.js
-6/webutilities
 mig-hub/sequel-crushyform
 michaeledgar/amp-front
 bitlabstudio/django-development-fabfile
@@ -37861,7 +37917,6 @@ stefanfoulis/django-class-based-auth-views
 tuxpiper/cloudcast
 white-frame/support
 byron-dupreez/rcc-redis-mock-adapter
-slickframework/validator
 bytedance/xgplayer
 LuminosoInsight/python-ftfy
 flypenguin/python-cattleprod
@@ -38300,6 +38355,8 @@ dave-redfern/somnambulist-value-objects
 eviweb/fuelphp-phpcs
 thecynic/pylutron
 yougov/elastic-doc-manager
+scikit-hep/root_numpy
+openstack/proliantutils
 LIN3S/CMSKernel
 sourcegraph/annotate
 mvdbos/php-spider
@@ -38413,6 +38470,7 @@ tikivn/NoAdapter
 ben-manes/caffeine
 square/picasso
 mongrate/mongrate
+auth0/java-jwt
 fex-team/fis-command-release
 gholt/flog
 Tirasa/ADSDDL
@@ -38769,6 +38827,7 @@ shiftylogic/guard
 datasift/datasift-ruby
 zrong/rookout
 LaravelCollective/iron-queue
+BoltApp/bolt-magento2
 ababic/django-cogwheels
 conorh/rfgraph
 reptilbud/hapi-swagger
@@ -39369,6 +39428,7 @@ LaurentGruber/BulletinBundle
 markbates/going
 piotr-rusin/spam-lists
 Visithor/VisithorBundle
+deployphp/deployer
 rideliner/poly_delegate
 Miserlou/flask-zappa
 stevemarple/python-atomiccreate
@@ -39863,7 +39923,6 @@ axypro/fs-ifs
 ipfs/iptb
 spotify/ulogger
 mattferris/bridge-components
-gregoriohc/argentum-common
 dapphp/securimage
 argoproj/argo-cd
 walbo/grunt-px-to-rem
@@ -40768,6 +40827,7 @@ project-sunbird/sunbird-telemetry-sdk
 daxlab/Flask-Cache-Buster
 opencredo/opencredo-esper
 spatie/laravel-permission
+Xethron/migrations-generator
 akaspin/tav
 blankapp/ui
 xelax90/xelax-admin
@@ -41327,6 +41387,7 @@ zwaveiot/securedgram-psk-aes-node
 deasilworks/cef
 NatLibFi/marc-record-serializers
 stubbles/stubbles-sequence
+GrafiteInc/Builder
 isisaddons-legacy/isis-module-audit
 osflab/validator
 webforge-labs/webforge-utils
@@ -44711,6 +44772,7 @@ mikeatlas/realtime-rails
 dejan7/HTTPQuest
 hfaran/slack-export-viewer
 moodle/moodle
+laravolt/indonesia
 erming/shout
 rdo-management/python-rdomanager-oscplugin
 vega/vega-view
@@ -44721,9 +44783,11 @@ jul11co/jul11co-utils
 cBioPortal/clinical-timeline
 lukaszmakuch/object-attribute-container
 evant/rxloader
+gorilla/websocket
 jaraco/rst.linker
 dennisreimann/masq
 aws/aws-sdk-go
+onsi/ginkgo
 AlienCreations/alien-node-api-utils
 rails/sprockets-rails
 bobfridley/laravel-google-tasks
@@ -45301,6 +45365,7 @@ khiemns54/takenoko
 wavycloud/pyboto3
 vorg/fit-rect
 mozilla/DeepSpeech
+cosenary/Simple-PHP-Cache
 elodina/pyrgus
 frameworkwtf/html
 vladimyr/qtimecards
@@ -45878,6 +45943,8 @@ TimPietrusky/temper1-connector
 yii2lab/yii2-app
 baronswindle/react-redux-ephemeral
 acquia/lightning
+acquia/headless-lightning
+jsor/geokit
 goetas-webservices/xsd-reader
 eface2face/meteor-blaze
 rFlex/SCJavaTools
@@ -46248,6 +46315,7 @@ meeko-contrib/go-meeko-webhook-receiver
 lasallecms/lasallecms-l5-lasallecmsfrontend-pkg
 findhit/findhit-hotplug
 JakeWharton/butterknife
+boolangery/py-lua-parser
 panoptix-za/hotrod-dash-data
 Snugug/gulp-subtree
 darkobits/interface
@@ -47449,6 +47517,8 @@ marczhermo/search-list
 mckamey/jsonml
 remarkjs/remark
 richRemer/twixt-class
+thornomad/django-hitcount
+wdecoster/NanoPlot
 divio/djangocms-text-ckeditor
 aws/sagemaker-containers
 thoov/mock-socket
@@ -48948,7 +49018,7 @@ lukaaash/sftp-ws
 TobyMaxham/laravel-odbc-driver
 creack/termios
 generate/generate-data
-dancarpenter21/lol-api-rxjava
+elastic/elasticsearch-metrics-reporter-java
 rafmagana/prowly
 rrdelaney/bs-loader
 klmitch/aversion
@@ -49557,6 +49627,12 @@ giansalex/greenter-xml
 wq1019/iplimit
 lambdalisue/app_version
 miguelgrinberg/climax
+chzyer/readline
+Pallinder/go-randomdata
+joeshaw/gengen
+balzaczyy/golucene
+tucnak/climax
+golang/geo
 io-digital/laravel-sendgrid-driver
 mistval/unofficial-jisho-api
 radixdlt/radixdlt-js-lite
@@ -49770,7 +49846,6 @@ thephpleague/omnipay-mollie
 RhubarbPHP/Module.ImageProcessing
 folkelib/folke-ko-grid
 b-ryan/powerline-shell
-nomocas/yamvish
 iron-io/iron_worker_ruby
 davewwww/TaggedServices
 vdeapps/phpcore-helper
@@ -50550,6 +50625,7 @@ ChaosGroup/json-ws
 spatie/laravel-csp
 spatie/7to5
 wapmorgan/Mp3Info
+aplazame/php-sdk
 Cherry-Pie/ApiDocs
 stretcher/stretcher
 MarcoFavorito/pythomata
@@ -50959,7 +51035,6 @@ webignition/url-resolver
 hobnob/xmlStreamReader
 thecodebureau/ridge
 laconbass/mocha-pending
-PHPPlatform/json-cache
 gr2m/moment-parseformat
 fondbot/chat
 eshandas/django_rest_swagger_enhancer
@@ -51106,6 +51181,9 @@ artsy/momentum
 milankinen/livereactload
 JGAntunes/ampersand-infinite-scroll
 droath/project-x
+phpgithook/hello-world
+hamedmehryar/laravel-chat
+sgrodzicki/pagespeed
 neptulon/randstr
 pressbooks/pressbooks
 mk-fg/graphite-metrics
@@ -51377,6 +51455,7 @@ csaez/wishlib
 shamanland/xdroid
 shannonmoeller/handlebars-wax
 spotify/ssh-agent-proxy
+aws/aws-sdk-java
 aws/aws-sdk-java
 zeromq/jeromq
 coz-labo/coz-handlebars-engine
@@ -52132,6 +52211,7 @@ kxz/littlebrother
 pyaesone17/sms-poh
 godong9/solr-node
 Fullscreen/squid
+henrylee2cn/pholcus
 containous/traefik-extra-service-fabric
 ateamlunchbox/graphql_grpc
 DarkAiR/yii2-mailtank-client
@@ -52360,7 +52440,6 @@ overclokk/cookie
 zortje/rules
 thunks/thunk-disque
 smikes/inchi
-Thuata/IntercessionBundle
 wendal/errors
 bwaidelich/Wwwision.Eventr
 solid/folder-pane
@@ -54312,6 +54391,7 @@ ohdearapp/laravel-ohdear-webhooks
 coderatio/laranotify
 jjkester/django-auditlog
 mapequation/infomap
+coveralls-clients/coveralls-python
 substancelab/rconomic
 jbittel/base32-crockford
 scgolang/sc
@@ -55824,6 +55904,7 @@ mardix/flask-recaptcha
 mapbox/font-scope
 dan-da/coinparams
 jaypha/j-plate
+gobline/acl
 fshost/node-dir
 drcloud/stackclimber
 undefined-exception-coders/UECMediaBundle
@@ -55907,6 +55988,7 @@ Eden-PHP/Collection
 OrienteerBAP/orientdb-oda-birt
 clarketm/image-map
 dadooda/hack_tree
+zerc/django-vest
 cloudtools/stacker
 vinsol-spree-contrib/spree_favorite_products
 krutush/krutush
