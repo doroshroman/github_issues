@@ -50,21 +50,26 @@ async def fetch(url, session=None, data=None):
     return url, resp, data
 
 
+def get_quota(response):
+    quota = response['resources']['core']['remaining']
+
+    reset_timestamp = response['resources']['core']['reset']
+    reset_time = datetime.fromtimestamp(reset_timestamp)
+
+    print(f"REMAINING QUOTA: {quota}")
+    print(f"RESET TIME: {reset_time}")
+    time.sleep(0.1)
+    return quota
+    
+    
 with open(GITHUB_REPOS_FILENAME, 'r') as file:
     GITHUB_REPOS = file.read().splitlines()
 
 try:
     _, resp, _ = asyncio.run(fetch(f"{GITHUB_API_URL}/rate_limit"))
-    quota = resp['resources']['core']['remaining']
+    quota = get_quota(resp)
 
-    reset_timestamp = resp['resources']['core']['reset']
-    reset_time = datetime.fromtimestamp(reset_timestamp)
-
-    print(f"REMAINING QUOTA: {quota}")
-    print(f"RESET TIME: {reset_time}")
-    time.sleep(1)
-
-    API_LIMIT = quota // 100 if quota > 100 else exit()
+    API_LIMIT = quota // 100 if quota > 100 else quota
 
     with open(VISITED_GITHUB_REPOS_FILENAME, 'r') as file:
         VISITED_REPOS = file.read().splitlines()
@@ -153,7 +158,18 @@ async def main(visited_repos, repos):
                             "issue_title": issue_title
                         }))
                     )
-
+            
+            # check if we have enough qouta remaining
+            _, rate_limit_response, _ = await fetch(f"{GITHUB_API_URL}/rate_limit")
+            quota = get_quota(
+                rate_limit_response
+            )
+            if not quota:
+                break
+            if len(comments_tasks) > quota:
+                continue
+            
+            
             comments_responses = await asyncio.gather(*comments_tasks, return_exceptions=True)
             comments_responses = [resp for resp in comments_responses if not isinstance(resp, Exception)]
             for url, response, data in comments_responses:
