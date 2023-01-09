@@ -111,13 +111,16 @@ async def main(visited_repos, repos):
         for repo_url, response, data in responses:
             repo_url = '/'.join(repo_url.split('/')[-3:-1])
 
-            if isinstance(response, dict) or not response:
-                output = f"\033[96m{repo_url}" + f"\033[96m {response.get('message', response)}\033[0m" if response\
-                    else f"\033[96m{repo_url}" + " No closed issues\033[0m"
+            if isinstance(response, dict):
+                output = f"\033[96m{repo_url}" + f"\033[96m {response.get('message', response)}\033[0m"
                 print(output)
+                
+                continue
+            if not response:
+                print(f"\033[96m{repo_url} Not found\033[0m")
                 visited_repos_batch.add(repo_url)
                 continue
-
+                
             comments_tasks = []
 
             for resp in response:
