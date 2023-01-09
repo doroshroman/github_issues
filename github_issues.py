@@ -28,11 +28,6 @@ headers = {
 }
 
 
-# create following file, because json loads strange with "a" mode, so it's better to create file explicitly
-file = Path(GITHUB_ISSUES_FILENAME)
-file.touch(exist_ok=True)
-
-
 async def fetch(url, session=None, data=None):
     async def _get(session):
         await asyncio.sleep(0.01)
@@ -61,26 +56,6 @@ def get_quota(response):
     time.sleep(0.1)
     return quota
     
-    
-with open(GITHUB_REPOS_FILENAME, 'r') as file:
-    GITHUB_REPOS = file.read().splitlines()
-
-try:
-    _, resp, _ = asyncio.run(fetch(f"{GITHUB_API_URL}/rate_limit"))
-    quota = get_quota(resp)
-
-    API_LIMIT = quota // 100 if quota > 100 else quota
-
-    with open(VISITED_GITHUB_REPOS_FILENAME, 'r') as file:
-        VISITED_REPOS = file.read().splitlines()
-
-        GITHUB_REPOS = list(set(GITHUB_REPOS) - set(VISITED_REPOS))[:API_LIMIT]
-        if len(GITHUB_REPOS) == 0:
-            print("ALL DATA SUCCESSFULLY INGESTED!")
-            exit()
-except FileNotFoundError:
-    VISITED_REPOS = []
-
 
 def generate_chunks_unvisited(visited_repos, repos, chunk_len=100):
     def append_chunk(repo, visited_repos): return chunk.append(
@@ -184,5 +159,35 @@ async def main(visited_repos, repos):
         append_to_file(VISITED_GITHUB_REPOS_FILENAME, visited_repos_batch)
 
 
-if __name__ == "__main__":
+def run():
+    # create following file, because json loads strange with "a" mode, so it's better to create file explicitly
+    file = Path(GITHUB_ISSUES_FILENAME)
+    file.touch(exist_ok=True)
+    
+    with open(GITHUB_REPOS_FILENAME, 'r') as file:
+        GITHUB_REPOS = file.read().splitlines()
+
+    try:
+        _, resp, _ = asyncio.run(fetch(f"{GITHUB_API_URL}/rate_limit"))
+        quota = get_quota(resp)
+
+        API_LIMIT = quota // 100 if quota > 100 else quota
+
+        with open(VISITED_GITHUB_REPOS_FILENAME, 'r') as file:
+            VISITED_REPOS = file.read().splitlines()
+
+            GITHUB_REPOS = list(set(GITHUB_REPOS) - set(VISITED_REPOS))[:API_LIMIT]
+            if len(GITHUB_REPOS) == 0:
+                print("ALL DATA SUCCESSFULLY INGESTED!")
+                exit()
+    except FileNotFoundError:
+        VISITED_REPOS = []
+    
+    
     asyncio.run(main(VISITED_REPOS, GITHUB_REPOS))
+
+
+if __name__ == "__main__":
+    while True:
+        run()
+        time.sleep(5)
