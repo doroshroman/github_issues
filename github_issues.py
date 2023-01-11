@@ -42,6 +42,7 @@ async def fetch(url, session=None, data=None):
     else:
         url, resp, data = await _get(session)
 
+    await asyncio.sleep(0.01)
     return url, resp, data
 
 
@@ -112,12 +113,15 @@ async def main(visited_repos, repos):
             repo_url = '/'.join(repo_url.split('/')[-3:-1])
 
             if isinstance(response, dict):
-                output = f"\033[96m{repo_url}" + f"\033[96m {response.get('message', response)}\033[0m"
+                message = response.get('message', response)
+                output = f"\033[96m{repo_url}" + f"\033[96m {message}\033[0m"
                 print(output)
-                
+                if "Not Found" in message:
+                    visited_repos_batch.add(repo_url)
                 continue
+            
             if not response:
-                print(f"\033[96m{repo_url} Not found\033[0m")
+                print(f"\033[94m{repo_url} Empty response, Not found\033[0m")
                 visited_repos_batch.add(repo_url)
                 continue
                 
@@ -174,7 +178,7 @@ def run():
         _, resp, _ = asyncio.run(fetch(f"{GITHUB_API_URL}/rate_limit"))
         quota = get_quota(resp)
 
-        API_LIMIT = quota // 100 if quota > 100 else quota
+        API_LIMIT = quota // 100 if quota > 100 else exit()
 
         with open(VISITED_GITHUB_REPOS_FILENAME, 'r') as file:
             VISITED_REPOS = file.read().splitlines()
